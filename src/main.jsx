@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { About } from './pages/About/About';
-import { Home } from './pages/Home/Home';
 import { Buy } from './pages/Buy/Buy';
+import Home from './pages/Home/Home';
 
 
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home />
   },
   {
     path: "/about",

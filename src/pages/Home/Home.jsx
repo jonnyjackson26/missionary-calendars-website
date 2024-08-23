@@ -1,17 +1,32 @@
 import React, { useState, useEffect, useContext } from 'react';
 import './Home.css'
 import LinkButton from "../../components/LinkButton/LinkButton";
+import { FaCheckCircle, FaUpload, FaCalendarAlt } from 'react-icons/fa';
 
-export function Home() {
-
+const Home = () => {
     return (
-        <>
-            <main>
-                <h1>Home</h1>
-                <LinkButton to="/" children="Home Page" />
-                <LinkButton to="/buy" children="Buy Page" />
-                <LinkButton to="/about" children="About Page" />
-            </main>
-        </>
-    )
-}
+        <div className="home-container">
+            <h1 className="home-title">Custom Missionary Calendars</h1>
+            <p className="home-subtitle">In Just Three Simple Steps</p>
+
+            <div className="steps-container">
+                <div className="step">
+                    <FaCheckCircle className="step-icon" />
+                    <p className="step-text">1. Choose Template</p>
+                </div>
+                <div className="step">
+                    <FaUpload className="step-icon" />
+                    <p className="step-text">2. Upload Photos</p>
+                </div>
+                <div className="step">
+                    <FaCalendarAlt className="step-icon" />
+                    <p className="step-text">3. Input Dates</p>
+                </div>
+            </div>
+
+            <button className="get-started-btn">Get Started</button>
+        </div>
+    );
+};
+
+export default Home;
