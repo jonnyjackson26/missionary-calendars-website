@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <button className="get-started-btn">Get Started</button>
+            <LinkButton to="/templates" className="get-started-btn">Get Started</LinkButton>
         </div>
     );
 };

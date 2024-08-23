@@ -1,0 +1,83 @@
+/* Templates.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.templates-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.templates-title {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+}
+
+.template-card {
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    border-color: #2d89ef;
+}
+
+.template-card.selected {
+    border-color: #ffcc00;
+    transform: translateY(-8px);
+}
+
+.template-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.next-btn {
+    font-size: 1.3rem;
+    padding: 0.8rem 2.5rem;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #ffd633;
+    transform: translateY(-3px);
+}
+
+.next-btn.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

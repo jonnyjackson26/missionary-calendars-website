@@ -4,6 +4,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { About } from './pages/About/About';
 import { Buy } from './pages/Buy/Buy';
 import Home from './pages/Home/Home';
+import Templates from './pages/Templates/Templates';
 
 
 
@@ -19,6 +20,10 @@ const router = createHashRouter([
   {
     path: "/buy",
     element: <Buy />,
+  },
+  {
+    path: "/templates",
+    element: <Templates />,
   },
 ])
 
