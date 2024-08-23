@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LinkButton from '../../components/LinkButton/LinkButton';
 import './UploadPhotos.css';
 
 const UploadPhotos = () => {
@@ -73,6 +74,7 @@ const UploadPhotos = () => {
             >
                 Next
             </button>
+            <LinkButton to="/options">Options</LinkButton>
         </div>
     );
 };

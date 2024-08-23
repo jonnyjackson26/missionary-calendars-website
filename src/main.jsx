@@ -6,7 +6,7 @@ import { Buy } from './pages/Buy/Buy';
 import Home from './pages/Home/Home';
 import Templates from './pages/Templates/Templates';
 import UploadPhotos from './pages/UploadPhotos/UploadPhotos';
-
+import Options from './pages/Options/Options';
 
 
 const router = createHashRouter([
@@ -29,6 +29,10 @@ const router = createHashRouter([
   {
     path: "/uploadPhotos",
     element: <UploadPhotos />,
+  },
+  {
+    path: "/options",
+    element: <Options />,
   },
 ])
 

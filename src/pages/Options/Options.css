@@ -1,0 +1,178 @@
+/* Options.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.options-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.options-title {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.missionary-type-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.missionary-type-label {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+.missionary-type-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.type-button {
+    padding: 0.7rem 2rem;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.type-button:hover,
+.type-button.active {
+    background-color: #ffaa00;
+    transform: translateY(-2px);
+}
+
+.missionary-info label {
+    display: block;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.missionary-info input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.holiday-options {
+    margin: 2rem 0;
+}
+
+.holiday-options label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.holiday-options input {
+    margin-right: 0.5rem;
+}
+
+.important-dates {
+    margin-bottom: 2rem;
+}
+
+.important-date {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.important-date label {
+    font-size: 0.9rem;
+}
+
+.important-date input[type='number'],
+.important-date input[type='text'] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.remove-date-btn {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-date-btn:hover {
+    background-color: #ff4d4d;
+}
+
+.add-date-btn {
+    margin-top: 1rem;
+    background-color: #33cc33;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-date-btn:hover {
+    background-color: #4dff4d;
+}
+
+.next-btn {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #1c84f4;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .important-date {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .missionary-type-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .missionary-type-buttons .type-button {
+        width: 100%;
+        padding: 0.7rem;
+    }
+}
