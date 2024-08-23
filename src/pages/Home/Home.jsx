@@ -2,8 +2,18 @@ import React, { useState, useEffect, useContext } from 'react';
 import './Home.css'
 import LinkButton from "../../components/LinkButton/LinkButton";
 import { FaCheckCircle, FaUpload, FaCalendarAlt } from 'react-icons/fa';
+import axios from "axios"
 
 const Home = () => {
+
+    const fetchAPI = async () => {
+        const response = await axios.get("http://localhost:8080/api/users");
+        console.log(response.data.users)
+    };
+    useEffect(() => {
+        fetchAPI();
+    }, [])
+
     return (
         <div className="home-container">
             <h1 className="home-title">Custom Missionary Calendars</h1>
