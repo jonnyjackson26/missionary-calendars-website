@@ -1,0 +1,126 @@
+/* UploadPhotos.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.upload-photos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.upload-photos-title {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.photo-count {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.upload-area {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    transition: border-color 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: #2d89ef;
+}
+
+.upload-area-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.upload-input {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+}
+
+.photo-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.remove-photo-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-photo-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.next-btn {
+    font-size: 1.3rem;
+    padding: 0.8rem 2.5rem;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #ffd633;
+    transform: translateY(-3px);
+}
+
+.next-btn.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LinkButton from '../../components/LinkButton/LinkButton';
 import './Templates.css';
 
 const templates = [
@@ -56,6 +57,7 @@ const Templates = () => {
             >
                 Next
             </button>
+            <LinkButton to="/uploadPhotos">Uplaod photos</LinkButton>
         </div>
     );
 };

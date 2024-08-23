@@ -5,6 +5,7 @@ import { About } from './pages/About/About';
 import { Buy } from './pages/Buy/Buy';
 import Home from './pages/Home/Home';
 import Templates from './pages/Templates/Templates';
+import UploadPhotos from './pages/UploadPhotos/UploadPhotos';
 
 
 
@@ -24,6 +25,10 @@ const router = createHashRouter([
   {
     path: "/templates",
     element: <Templates />,
+  },
+  {
+    path: "/uploadPhotos",
+    element: <UploadPhotos />,
   },
 ])
 
